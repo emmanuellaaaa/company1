@@ -1,0 +1,320 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'comic sans ms';
+}
+.wrapper{
+    width: 1001px;
+    margin: auto;
+    position: relative;
+}
+.logo a{
+    font-size: 20px;
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    color: #411ab7;
+    float: left;
+    margin-right: 1px;
+}
+.menu{
+    float: right;
+}
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    background-color: aliceblue;
+    z-index: 1;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+section{
+    margin: 0px;
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.kolom{
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.kolom .deskripsi{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #411ab7;
+}
+h2{
+    font-family: 'comic sans ms';
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 30px;
+    color: #411ab7;
+    width: 100%;
+    line-height: 50px;
+}
+
+
+
+.gambar{
+    width: 420px;
+    height: 420px;
+    margin-top: 0px;
+}
+
+
+/* MENGATUR GAMBAR KELAS ONLINE */
+
+#online {
+    width: 88%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 50px 0 65px;
+}
+
+#online .kolom {
+    flex: 1;
+    min-width: 0;
+}
+
+#online .gambar2 {
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+
+
+
+a.tbl-one, a.tbl-two, a.tbl-bergabung {
+    background: #0BA6DF;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 15px 10px 15px;
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-one:hover, a.tbl-bergabung:hover {
+    background: #FAA533;
+    text-decoration: none;
+}
+
+a.tbl-two {
+    background: #0BA6DF;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+a.tbl-two:hover {
+    background: #FAA533;
+    text-decoration: none;
+}
+
+
+
+.gambar1{
+    margin-top: 0px;
+    width: auto;
+    height: 400px;
+}
+.tengah{
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.tutor-list{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+.kartu-tutor{
+    width: 20%;
+    margin: 0 auto;
+}
+.kartu-tutor img{
+    width: 80%;
+    border-radius: 50%;
+}
+.kartu-tutor p{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #411ab7;
+}
+/* MENGATUR LOGO PARTNERS KERJASAMA */
+
+#partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0 45px;
+}
+
+#partners .kolom {
+    width: 100%;
+    max-width: 950px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#partners .partner-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+}
+
+#partners .kartu-partner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#partners .kartu-partner img {
+    width: 140px;
+    height: 115px;
+    object-fit: contain;
+    display: block;
+}
+
+
+
+
+.contact{
+    background: #dedede;
+    padding: 30px 0px 30px 0px;
+}
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    margin:0;
+}
+.footer-section{
+    width: 20%;
+    margin: 0 auto;
+}
+
+
+h4{
+    font-family: 'comic sans ms';
+    font-weight: 800px;
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: #411ab7;
+    width: 100%;
+    line-height: 20px;
+}
+#copyright{
+    text-align: center;
+    width: 100%;
+    padding: 30px 0px 30px 0px;
+    margin-top: 0px;
+}
+@media screen and (max-width:991.98px){
+    .wrapper{
+        width: 90%;
+    }
+    .logo a{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    nav .menu{
+        width: 100%;
+        margin: 0;
+    }
+    nav .menu ul{
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+    nav .menu ul li{
+        display: inline-block;
+        float: none;
+    }
+    section{
+        display: block;
+    }
+    section img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .kartu-partner{
+        width: 50%;
+    }
+    .kartu-tutor{
+        width: 50%;
+    }
+}
+
+
+
+#contact .wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
