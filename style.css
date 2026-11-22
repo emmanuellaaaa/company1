@@ -1,320 +1,130 @@
-*{
-    text-decoration: none;
-    margin: 0px;
-    padding: 0px;
+/* ===== RESET & BASE ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Comic Neue', cursive;
+  color: #333;
+  background: #fff;
+  line-height: 1.6;
 }
-body{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'comic sans ms';
-}
-.wrapper{
-    width: 1001px;
-    margin: auto;
-    position: relative;
-}
-.logo a{
-    font-size: 20px;
-    font-family: 'comic sans ms';
-    font-weight: 800;
-    color: #411ab7;
-    float: left;
-    margin-right: 1px;
-}
-.menu{
-    float: right;
-}
-nav{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    line-height: 80px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0px;
-    background-color: aliceblue;
-    z-index: 1;
-}
-nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-nav ul li{
-    float: left;
-}
-nav ul li a{
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    padding: 0px 16px 0px 16px;
-    text-decoration: none;
-}
-nav ul li a:hover{
-    text-decoration: underline;
-}
-section{
-    margin: 0px;
-    display: flex;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-.kolom{
-    margin-top: 50px;
-    margin-bottom: 0px;
-}
-.kolom .deskripsi{
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'comic sans ms';
-    color: #411ab7;
-}
-h2{
-    font-family: 'comic sans ms';
-    font-weight: 700;
-    font-size: 45px;
-    margin-bottom: 30px;
-    color: #411ab7;
-    width: 100%;
-    line-height: 50px;
+h1, h2, h4 { font-family: 'Baloo 2', cursive; color: #4a2d8a; }
+img { max-width: 100%; display: block; }
+a { text-decoration: none; }
+
+/* ===== WARNA ===== */
+:root {
+  --ungu: #4a2d8a;
+  --cyan: #22c3e6;
 }
 
-
-
-.gambar{
-    width: 420px;
-    height: 420px;
-    margin-top: 0px;
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eaf3fb;
+  padding: 15px 60px;
+}
+.logo { color: var(--ungu); font-weight: 700; font-size: 1.2rem; }
+.navbar nav a {
+  margin: 0 12px;
+  color: #222;
+  font-weight: 700;
+  font-size: .95rem;
+}
+.btn-signup {
+  background: var(--cyan);
+  color: #fff !important;
+  padding: 8px 20px;
+  border-radius: 20px;
 }
 
+/* ===== SECTION UMUM ===== */
+section { padding: 60px 60px; }
+.tag { color: var(--ungu); font-weight: 700; margin-bottom: 8px; }
+.center { text-align: center; }
+.desc { max-width: 800px; margin: 10px auto 30px; font-size: .9rem; }
+h1 { font-size: 2.4rem; margin-bottom: 15px; }
+h2 { font-size: 2rem; margin-bottom: 15px; }
 
-/* MENGATUR GAMBAR KELAS ONLINE */
-
-#online {
-    width: 88%;
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 35px;
-    padding: 50px 0 65px;
+.btn {
+  display: inline-block;
+  background: var(--cyan);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 20px;
+  margin-top: 15px;
+  font-weight: 700;
 }
 
-#online .kolom {
-    flex: 1;
-    min-width: 0;
+/* ===== HERO ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.hero-img, .kelas-img { flex: 1; }
+.hero-text, .kelas-text { flex: 1; }
+
+/* ===== KELAS ONLINE ===== */
+.kelas-online {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
-#online .gambar2 {
-    width: 420px;
-    height: 420px;
-    border-radius: 50%;
-    object-fit: contain;
+/* ===== TUTORS (INI KUNCI UTAMA) ===== */
+.tutors-container {
+  display: flex;
+  flex-direction: row;        /* 1 baris horizontal */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
+}
+.tutor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+}
+.tutor-card img {
+  width: 150px;
+  height: 200px;              /* lebih tinggi dari lebar = oval */
+  object-fit: cover;
+  border-radius: 50%;         /* bentuk oval */
+}
+.tutor-card p {
+  margin-top: 12px;
+  color: var(--ungu);
+  font-weight: 700;
 }
 
-
-
-
-a.tbl-one, a.tbl-two, a.tbl-bergabung {
-    background: #0BA6DF;
-    border-radius: 20px;
-    margin-top: 20px;
-    padding: 10px 15px 10px 15px;
-    color: aliceblue;
-    cursor: pointer;
-    font-weight: bold;
+/* ===== PARTNERS ===== */
+.partners-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 20px;
 }
+.partners-container img { width: 110px; height: 110px; object-fit: contain; }
 
-a.tbl-one:hover, a.tbl-bergabung:hover {
-    background: #FAA533;
-    text-decoration: none;
+/* ===== FOOTER ===== */
+.footer { background: #d9d9d9; padding: 40px 60px 20px; }
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
+.footer h4 { color: var(--ungu); margin-bottom: 10px; }
+.footer p { font-size: .85rem; }
+.copyright { text-align: center; margin-top: 30px; font-size: .85rem; }
 
-a.tbl-two {
-    background: #0BA6DF;
-    border-radius: 20px;
-    margin-top: 20px;
-    padding: 10px 20px 10px 20px;
-    color: aliceblue;
-    cursor: pointer;
-    font-weight: bold;
+/* ===== RESPONSIVE (HP) ===== */
+@media (max-width: 768px) {
+  .navbar { flex-direction: column; gap: 10px; padding: 15px; }
+  section { padding: 40px 20px; }
+  .hero, .kelas-online { flex-direction: column; }
+  .tutors-container { gap: 25px; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
 }
-
-p {
-    margin: 10px 0px 10px 0px;
-    padding: 10px 0px 10px 0px;
-}
-
-a.tbl-two:hover {
-    background: #FAA533;
-    text-decoration: none;
-}
-
-
-
-.gambar1{
-    margin-top: 0px;
-    width: auto;
-    height: 400px;
-}
-.tengah{
-    text-align: center;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-.tutor-list{
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0px;
-}
-.kartu-tutor{
-    width: 20%;
-    margin: 0 auto;
-}
-.kartu-tutor img{
-    width: 80%;
-    border-radius: 50%;
-}
-.kartu-tutor p{
-    font-family: 'comic sans ms';
-    font-weight: 800;
-    font-size: 25px;
-    text-align: center;
-    color: #411ab7;
-}
-/* MENGATUR LOGO PARTNERS KERJASAMA */
-
-#partners {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30px 0 45px;
-}
-
-#partners .kolom {
-    width: 100%;
-    max-width: 950px;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-#partners .partner-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    justify-items: center;
-    gap: 25px;
-    width: 100%;
-    max-width: 850px;
-    margin: auto;
-}
-
-#partners .kartu-partner {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#partners .kartu-partner img {
-    width: 140px;
-    height: 115px;
-    object-fit: contain;
-    display: block;
-}
-
-
-
-
-.contact{
-    background: #dedede;
-    padding: 30px 0px 30px 0px;
-}
-
-
-
-
-
-
-.footer{
-    width: 100%;
-    background: #D9D9D9;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 40px;
-    box-sizing: border-box;
-    margin:0;
-}
-.footer-section{
-    width: 20%;
-    margin: 0 auto;
-}
-
-
-h4{
-    font-family: 'comic sans ms';
-    font-weight: 800px;
-    font-size: 20px;
-    margin-bottom: 0px;
-    color: #411ab7;
-    width: 100%;
-    line-height: 20px;
-}
-#copyright{
-    text-align: center;
-    width: 100%;
-    padding: 30px 0px 30px 0px;
-    margin-top: 0px;
-}
-@media screen and (max-width:991.98px){
-    .wrapper{
-        width: 90%;
-    }
-    .logo a{
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    nav .menu{
-        width: 100%;
-        margin: 0;
-    }
-    nav .menu ul{
-        text-align: center;
-        margin: auto;
-        line-height: 60px;
-    }
-    nav .menu ul li{
-        display: inline-block;
-        float: none;
-    }
-    section{
-        display: block;
-    }
-    section img{
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    .kartu-partner{
-        width: 50%;
-    }
-    .kartu-tutor{
-        width: 50%;
-    }
-}
-
-
-
-#contact .wrapper {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-  }
