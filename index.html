@@ -1,146 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kampung Inggris</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kampung Inggris</title>
+  <!-- Font mirip reference (gaya tulis tangan) -->
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Baloo+2:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <!--Navbar menu-->
-        <nav>
-            <div class="wrapper"><!--pembuka wrapper pertama-->
-                <div class="logo">
-                    <a href=''> KampungInggris</a>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#home"> Home </a></li>
-                        <li><a href="#online">Kelas Online</a></li>
-                        <li><a href="#offline">Kelas Offline</a></li>
-                        <li><a href="#partners">Partners</a></li>
-                        <li><a href="#about">contact</a></li>
-                        <li><a href="#" class="tbl-one">Sign Up</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#" class="logo">KampungInggris</a>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#online">Kelas Online</a>
+      <a href="#offline">Kelas Offline</a>
+      <a href="#partners">Partners</a>
+      <a href="#contact">contact</a>
+      <a href="#" class="btn-signup">Sign Up</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-img">
+      <img src="https://via.placeholder.com/400x300/ffffff/4a2d8a?text=Ilustrasi+Laptop" alt="hero">
     </div>
-        <!--wrapper atas-->
-    <div class="wrapper">
-        <section id="home">
-            <img src="gambar1.png" class="gambar" />
-            <div class="kolom">
-                <p class="deskripsi">Belajar Bahasa Inggris #Kapanpun</p>
-                <h2>Always Enjoy n Happy</h2>
-                <p><b>Kursus Bahasa Inggris Online & Offline. Kursus bahasa Inggris termurah dan terlengkap. Langsung belajar dari ahlinya. Langkah jitu meningkatkan skill Bahasa Inggris untuk persiapan pendidikan dan akademi.</b></p>
-                <p><a href="#" class="tbl-bergabung">Ayo Bergabung</a></p>
-            </div>
-        </section>
+    <div class="hero-text">
+      <p class="tag">Belajar Bahasa Inggris #Kapanpun</p>
+      <h1>Always Enjoy n Happy</h1>
+      <p>Kursus Bahasa Inggris Online & Offline. Kursus bahasa inggris termurah dan terlengkap. Langsung belajar dari ahlinya. Langkah itu meningkatkan skill Bahasa Inggris untuk persiapan pendidikan dan akademi.</p>
+      <a href="#" class="btn">Ayo Bergabung</a>
     </div>
-        <!--untuk kelas online-->
-    <section id="online">
-        <div class="kolom">
-            <p class="deskripsi">Untuk Pemula. Belajar dari NOL.</p>
-            <h2>Kelas Online</h2>
-            <p><b>Jadwal belajar Senin s/d Jum'at. Hari Sabtu dan Minggu libur. Jam belajarnya Fleksibel. TANPA tatap muka NOL.
-               Diikuti oleh pelajar (minimal SMP), Mahasiswa, dan Umum (termasuk karyawan)
-               Baca kembali Info Sistem Pembelajaran di atas!</b></p>
-            <p><b>Peserta bisa mengakses materi dan latihan soal kapan saja. Belajarnya tidak harus saat materi di-share, selengkapnya. Jadi waktu belajar siswa bisa disesuaikan dengan kesibukannya masing-masing (FLEXIBLE)</b></p>
-            <p><a href="#" class="tbl-one">Pelajari Lebih Lanjut</a></p>
-        </div>
-        <img src="gambar2.jpg" class="gambar2" />
-    </section>
-        <!--untuk kelas offline-->
-    <section id="offline">
-        <div class="tengah">
-            <div class="kolom">
-                <p class="deskripsi">Kelas Offline</p>
-                <h2>Tutors terbaik</h2>
-                <p><b>Kampung inggris memiliki tutors yang berpengalaman</b></p>
-            </div>
-            <div class="tutor-list">
-                <div class="kartu-tutor">
-                    <img src="joko.jpg" />
-                    <p> Joko Susilo</p>
-                </div>
-                <div class="kartu-tutor">
-                    <img src="arkajati.jpg" />
-                    <p> Arkajati</p>
-                </div>
-                <div class="kartu-tutor">
-                    <img src="raningcipta.jpg" />
-                    <p> Raningcipta</p>
-                </div>
-                <div class="kartu-tutor">
-                    <img src="rusdianto.jpg" />
-                    <p> Rusdianto</p>
-                </div>
-            </div>
-        </div>
-    </section>
-        <div class="wrapper">
-        <section id="partners">
-            <div class="kolom">
-                <p class="deskripsi">Our Top Partners</p>
-                <h2>Partners Kerjasama</h2>
-                <p><b>Saat ini Kampung Inggris Pare sudah mempunyai kelas online ya guys! Terdapat berbagai macam kelas yang bisa diikuti. Mulai dari kelas
-                       dasar, intermediete, hingga advanced, Ada juga kelas yang fokus pada persiapan tes TOEFL, IEL TS, atau TOEIC. Metode belajarnya
-                        juga bermacam-macam sesuai kebutuhan pembelajaran . Metode belajar pada masing-masing kelas sidah diuji secara akademik oleh 
-                         ahlinya. Yuk Gabung!!! Inilah kampunginggris.co, satu-satunya website Kampung Inggris yang didukung oleh 6 lembaga Kursus dan
-                          Pelatihan resmi dari Kampung Inggris. Setiap lembaga menyelenggarakan kelas sesuai spesialisasinya masing-masing.
-                </b></p>
-            </div>
-            <div class="partner-list">
-                <div class="kartu-partner">
-                    <img src="File_logo4.png" />
-                </div>
-                <div class="kartu-partner">
-                    <img src="File_logo2.png" />
-                </div>
-                <div class="kartu-partner">
-                    <img src="File_logo3.png" />
-                </div>
-                <div class="kartu-partner">
-                    <img src="File_logo.png" />
-                </div>
-            </div>
-        </section>
+  </section>
+
+  <!-- KELAS ONLINE -->
+  <section class="kelas-online" id="online">
+    <div class="kelas-text">
+      <p class="tag">Untuk Pemula. Belajar dari NOL.</p>
+      <h2>Kelas Online</h2>
+      <p>Jadwal belajar Senin s/d Jum'at. Hari Sabtu dan Minggu libur. Jam belajarnya Fleksibel. TANPA tatap muka. Belajar dari NOL. Diikuti oleh pelajar (minimal SMP), Mahasiswa, dan Umum (termasuk karyawan). Baca kembali info Sistem Pembelajaran di atas!</p>
+      <p>Peserta bisa mengakses materi dan latihan soal kapan saja. Belajarnya tidak harus saat materi di-share, selongggarnya. Jadi waktu belajar siswa bisa disesuaikan dengan kesibukannya masing-masing (FLEXIBLE).</p>
+      <a href="#" class="btn">Pelajari Lebih Lanjut</a>
     </div>
-        <!--untuk contact-->
-    <div id="contact">
-        <section id="about">
-            <div class="wrapper">
-                <div class="footer">
-                    <div class="footer-section">
-                        <h3>KampungInggris</h3>
-                        <p><b>Lembaga Resmi dari Kampung Inggris Pare dengan izin operasional tahun 2025.</b></p>
-                    </div>
-                    <div class="footer-section">
-                        <h3>About</h3>
-                        <p><b>Instagram : @kampunginggris.co</b></p>
-                        <p><b>Facebook : kampunginggris.co</b></p>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Contact</h3>
-                        <p><b>Jln. Eforbia Blok T No. 12 Tegalsari Tulungrejo Pare (Kampung Inggris) Kediri 00633</b></p>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Social</h3>
-                        <p><b>Whatsapp : 0821-1707-0407 (Mr. Asror)</b></p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="kelas-img">
+      <img src="https://via.placeholder.com/400x300/ffffff/4a2d8a?text=Ilustrasi+Coder" alt="coder">
     </div>
-        <!--copyright-->
-    <div id="copyright">
-        <div class="wrapper">
-            &copy; 2025 <b>KampungInggris</b>
-        </div>
+  </section>
+
+  <!-- TUTORS -->
+  <section class="tutors" id="offline">
+    <p class="tag center">Kelas Offline</p>
+    <h2 class="center">Tutors terbaik</h2>
+    <p class="desc center">Kampung inggris memiliki tutors yang berpengalaman</p>
+
+    <div class="tutors-container">
+      <div class="tutor-card">
+        <img src="https://i.pravatar.cc/300?img=12" alt="Joko Susilo">
+        <p>Joko Susilo</p>
+      </div>
+      <div class="tutor-card">
+        <img src="https://i.pravatar.cc/300?img=13" alt="Arkajati">
+        <p>Arkajati</p>
+      </div>
+      <div class="tutor-card">
+        <img src="https://i.pravatar.cc/300?img=47" alt="Raningcipta">
+        <p>Raningcipta</p>
+      </div>
+      <div class="tutor-card">
+        <img src="https://i.pravatar.cc/300?img=14" alt="Rusdianto">
+        <p>Rusdianto</p>
+      </div>
     </div>
-    </div> <!--penutup wrapper pertama-->
-</div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="partners" id="partners">
+    <p class="tag center">Our Top Partners</p>
+    <h2 class="center">Partners Kerjasama</h2>
+    <p class="desc center">Saat ini Kampung Inggris Pare sudah mempunyai kelas online ya guys! Terdapat berbagai macam kelas yang bisa diikuti. Mulai dari kelas dasar, intermediate, hingga advanced. Ada juga kelas yang fokus pada persiapan tes TOEFL, IELTS, atau TOEIC. Metode belajarnya juga bermacam-macam sesuai kebutuhan pembelajaran. Metode belajar pada masing-masing kelas sudah diuji secara akademik oleh ahlinya. Yuk Gabung!!! Inilah kampunginggris.co, satu-satunya website Kampung Inggris yang didukung oleh 6 Lembaga Kursus dan Pelatihan resmi dari Kampung Inggris. Setiap lembaga menyelenggarakan kelas sesuai spesialisasinya masing-masing.</p>
+
+    <div class="partners-container">
+      <img src="https://via.placeholder.com/120x120/ffffff/4a2d8a?text=Logo+1" alt="partner1">
+      <img src="https://via.placeholder.com/120x120/ffffff/4a2d8a?text=Logo+2" alt="partner2">
+      <img src="https://via.placeholder.com/120x120/ffffff/4a2d8a?text=Logo+3" alt="partner3">
+      <img src="https://via.placeholder.com/120x120/ffffff/4a2d8a?text=Logo+4" alt="partner4">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="footer-grid">
+      <div>
+        <h4>kampungInggris</h4>
+        <p>Lembaga Resmi dari Kampung Inggris Pare dengan izin operasional tahun 2025.</p>
+      </div>
+      <div>
+        <h4>about</h4>
+        <p>Instagram : @kampunginggris.co</p>
+        <p>Facebook : kampunginggris.co</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Jln. Eforbia Blok T No. 12 Tegalasari Tulungrejo Pare (Kampung Inggris) - Kediri 606033</p>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <p>Whatsapp : 0821-1707-0407 (Mr. Asror)</p>
+      </div>
+    </div>
+    <p class="copyright">#copyright; 2025 <strong>KampungInggris</strong></p>
+  </footer>
+
 </body>
 </html>
